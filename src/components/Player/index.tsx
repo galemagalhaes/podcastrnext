@@ -72,8 +72,8 @@ export function Player() {
         <div className={styles.currentEpisode}>
           <Image 
             src={episode.thumbnail}
-            width={592} 
-            height={592} 
+            width={595} 
+            height={595} 
             objectFit='cover'/>
           <strong>{episode.title}</strong> 
           <span>{episode.members}</span> 
@@ -133,7 +133,7 @@ export function Player() {
           disabled = {!episode}
           onClick = {togglePlay}>
             { isPlaying
-            ? <img src="/pause.svg" alt="Tocar"/>
+            ? <img src="/pause.svg" alt="Pausar"/>
             : <img src="/play.svg" alt="Tocar"/>
             }
           </button>
